@@ -33,8 +33,8 @@ class TableView: UITableView {
         backgroundColor = .clear
         cellLayoutMarginsFollowReadableWidth = false
         keyboardDismissMode = .onDrag
-        separatorColor = .clear
-        separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+//        separatorColor = .clear // 隐藏底部分割线
+//        separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) // 底部分割线与边距的距离
         tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 1))
         tableFooterView = UIView()
     }

@@ -40,6 +40,7 @@
 		1516549A2BF48BD100CF013D /* TBDataSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151654992BF48BD100CF013D /* TBDataSection.swift */; };
 		1516549C2BF48BED00CF013D /* TBDataCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516549B2BF48BED00CF013D /* TBDataCellViewModel.swift */; };
 		1516549E2BF48CD400CF013D /* TBTableStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1516549D2BF48CD400CF013D /* TBTableStyle.swift */; };
+		151654A12BF5940700CF013D /* RxTableViewSectionedViewReloadDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151654A02BF5940700CF013D /* RxTableViewSectionedViewReloadDataSource.swift */; };
 		1527D1F32BF3519200708410 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527D1F22BF3519200708410 /* AppDelegate.swift */; };
 		1527D1F52BF3519300708410 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527D1F42BF3519300708410 /* SceneDelegate.swift */; };
 		1527D1FC2BF3519800708410 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1527D1FB2BF3519800708410 /* Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		151654992BF48BD100CF013D /* TBDataSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDataSection.swift; sourceTree = "<group>"; };
 		1516549B2BF48BED00CF013D /* TBDataCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBDataCellViewModel.swift; sourceTree = "<group>"; };
 		1516549D2BF48CD400CF013D /* TBTableStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TBTableStyle.swift; sourceTree = "<group>"; };
+		151654A02BF5940700CF013D /* RxTableViewSectionedViewReloadDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTableViewSectionedViewReloadDataSource.swift; sourceTree = "<group>"; };
 		1527D1EF2BF3519200708410 /* RxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1527D1F22BF3519200708410 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1527D1F42BF3519300708410 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,12 +202,21 @@
 			path = "TableView演示";
 			sourceTree = "<group>";
 		};
-		151654942BF4618C00CF013D /* Rx */ = {
+		151654942BF4618C00CF013D /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1527D2262BF361AC00708410 /* Observable+Operators.swift */,
 				151654952BF4619400CF013D /* SharedSequenceConvertibleType.swift */,
 			);
-			path = Rx;
+			path = RxSwift;
+			sourceTree = "<group>";
+		};
+		1516549F2BF4BBD600CF013D /* RxDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				151654A02BF5940700CF013D /* RxTableViewSectionedViewReloadDataSource.swift */,
+			);
+			path = RxDataSources;
 			sourceTree = "<group>";
 		};
 		1527D1E62BF3519200708410 = {
@@ -293,6 +304,7 @@
 		1527D2222BF35F0500708410 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1516549F2BF4BBD600CF013D /* RxDataSources */,
 				1516546F2BF36FCD00CF013D /* ColorHash */,
 				1527D2232BF35F0E00708410 /* Reachability.swift */,
 				151654572BF3697600CF013D /* DLog.swift */,
@@ -306,8 +318,7 @@
 		1527D2252BF3619E00708410 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				151654942BF4618C00CF013D /* Rx */,
-				1527D2262BF361AC00708410 /* Observable+Operators.swift */,
+				151654942BF4618C00CF013D /* RxSwift */,
 				151654632BF36EC000CF013D /* UIApplication+Extension.swift */,
 				1516546B2BF36F8200CF013D /* UIButton+Extension.swift */,
 				1516546D2BF36F9F00CF013D /* UIColor+Extensions.swift */,
@@ -447,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				151654682BF36F3B00CF013D /* ImageView.swift in Sources */,
+				151654A12BF5940700CF013D /* RxTableViewSectionedViewReloadDataSource.swift in Sources */,
 				1516548E2BF45F3000CF013D /* BindView.swift in Sources */,
 				1527D2132BF358B200708410 /* Application.swift in Sources */,
 				1516545A2BF36BE900CF013D /* Navigator.swift in Sources */,

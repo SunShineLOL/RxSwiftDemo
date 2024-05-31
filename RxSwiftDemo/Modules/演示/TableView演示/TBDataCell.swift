@@ -8,8 +8,9 @@
 import UIKit
 import RxSwift
 import SnapKit
+import SwifterSwift
 
-class TBDataCell: HomeCell {
+class TBDataCell: TableViewCell {
     
     lazy var selectedBtn: Button = {
         let view = Button()
@@ -27,12 +28,12 @@ class TBDataCell: HomeCell {
     
     override func makeUI() {
         super.makeUI()
-        
+        self.stackView.axis = .horizontal
+        self.stackView.addArrangedSubviews([name, StackView(), selectedBtn])
     }
     
     func bindViewModel(_ model: TBDataCellViewModel) {
         model.title.drive(self.name.rx.text).disposed(by: rx.disposeBag)
         model.isSelected.bind(to: self.selectedBtn.rx.isSelected).disposed(by: rx.disposeBag)
     }
-    
 }
